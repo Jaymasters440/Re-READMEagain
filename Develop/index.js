@@ -1,6 +1,8 @@
 //  Install packages needed for this application
 const inquirer = require('inquirer');
 const fs = require("fs");
+const gm = require("./utils/generateMarkdown.js");
+// const generateMarkdown = require('./utils/generateMarkdown.js');
 //  An array of questions for user input
 const questions = [
 
@@ -30,9 +32,10 @@ const questions = [
         name: 'contributions',
 
     },
+    // Change License choices
     {
-        type: 'checkbox',
-        message: 'What License/s whould you like to use?',
+        type: 'list',
+        message: 'What License whould you like to use?',
         name: 'license',
         choices: ["Apache 2.0 License","L2","L3","L4",] 
        },
@@ -51,11 +54,13 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
+
+    console.log(data);
     
+    var text = gm.generateMarkdown(data);
 
 
-
-    fs.writeFile(filename, fileHTML, (err) =>
+    fs.writeFile(fileName, text, (err) =>
         err ? console.log(err) : console.log('Success!')
     )
 }
@@ -67,7 +72,7 @@ function init() {
 
     .then((data) => {
         const filename = `README.md`;
-        writeToFile(fileName, data);
+        writeToFile(filename, data);
     });
  }
 

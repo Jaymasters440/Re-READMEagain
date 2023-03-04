@@ -1,4 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// function that returns a license badge based on which license is passed in 5 License minimum only select one license at a time
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   var answer = "";
@@ -22,38 +22,61 @@ function renderLicenseBadge(license) {
   return answer;
 }
 
-// TODO: Create a function that returns the license link
+// function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
+  var answer = "";
+  switch (license) {
+    case "Apache 2.0 License":
+      answer = "[Click here to link to License](https://opensource.org/licenses/Apache-2.0)";
+      break;
+
+    case "Boost Software License 1.0":
+      answer = "[Click here to link to License](https://www.boost.org/LICENSE_1_0.txt)";
+      break;
+    case "BSD 3-Clause License":
+      answer = "[Click here to link to License](https://opensource.org/licenses/BSD-3-Clause)";
+      break;
+    case "MIT License":
+      answer = "[Click here to link to License](https://opensource.org/licenses/BSD-3-Clause)";
+      break;
+    case "The Pearl License":
+      answer = "[Click here to link to License](https://opensource.org/licenses/Artistic-2.0)";
+      break;
+  }
+  return answer;
 
 
 }
 
-// TODO: Create a function that returns the license section of README
+//  function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   var licenseLink = renderLicenseLink (license);
   return `For information on our license please follow this link: ${licenseLink}`;
 }
 
-// TODO: Create a function to generate markdown for README
+// generate markdown for README 
 function generateMarkdown(data) {
-  
+  console.log(data);
   var licenseSection = renderLicenseSection(data.license);
   var licenseBadge = renderLicenseBadge(data.license);
-  return `# ${data.title}
+  return `# ${data.title} ${licenseBadge}
   ## Description
   
   ${data.description}
   
-  ## Table of Contents (Optional)
   
-  If your README is long, add a table of contents to make it easy for users to find what they need.
+  ## Table of Contents 
   
-  - [Installation](#installation)
-  - [Usage](#usage)
+  - [Badges](#badges)
   - [Credits](#credits)
+  - [How to contribute](#how to contribute)
+  - [Installation](#installation)
   - [License](#license)
+  - [Questions](#questions)
+  - [Tests](#tests)
+  - [Usage](#usage)
   
   ## Installation
   
@@ -70,30 +93,29 @@ function generateMarkdown(data) {
   
   ---
   
-  🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-  
+
   ## Badges
   
   ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-  
-  Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+
+  ${licenseBadge}
   
   
   ## How to Contribute
   
   ${data.contributions}
   
-  ## Tests
-  
-  Go the extra mile and write tests for your application. Then provide examples on how to run them here.
-
-
   
   ## Questions
 
   [github.com/${data.gitHub}](github.com/${data.gitHub})
   
-  [${data.email}](${data.email})`;;
-}
 
-module.exports = generateMarkdown;
+
+
+
+
+  [${data.email}](${data.email})`;
+}
+//Everything above is inside one set of backticks.
+module.exports = {generateMarkdown};
