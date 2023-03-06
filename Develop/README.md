@@ -1,29 +1,26 @@
 # Re-READMEagain [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
   ## Description
   
-  A program to help developers write a README file
+  Program to help Developers wright README files
   
   
   ## Table of Contents 
   
   - [Badges](#badges)
-  - [Credits](#credits)
-  - [How to contribute](#how to contribute)
+  - [Contribution](#contribution)
   - [Installation](#installation)
   - [License](#license)
   - [Questions](#questions)
-  - [Tests](#tests)
   - [Usage](#usage)
   
   ## Installation
   
-  HTFSIK?
+  HTHSIK?
   
   ## Usage
   
-  to help Developers save time and be more productive.
-  
-      
+  To help save time writing READMEs
+        
   ## License
   
   For information on our license please follow this link: [Click here to link to License](https://opensource.org/licenses/BSD-3-Clause)
@@ -38,18 +35,18 @@
   [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
   
   
-  ## How to Contribute
+  ## Contribution
   
-  Please don't mess it up
+  Don't mess it up
   
   
   ## Questions
 
-  [github.com/jamasters440](github.com/jamasters440)
+  [github.com/jaymasters440](github.com/jaymasters440)
   
 
 
 
 
 
-  [jaymasters440](jaymasters440)
+  [jaymasters440@gmail.com](jaymasters440@gmail.com)

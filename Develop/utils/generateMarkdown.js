@@ -70,12 +70,10 @@ function generateMarkdown(data) {
   ## Table of Contents 
   
   - [Badges](#badges)
-  - [Credits](#credits)
-  - [How to contribute](#how to contribute)
+  - [Contribution](#contribution)
   - [Installation](#installation)
   - [License](#license)
   - [Questions](#questions)
-  - [Tests](#tests)
   - [Usage](#usage)
   
   ## Installation
@@ -85,8 +83,7 @@ function generateMarkdown(data) {
   ## Usage
   
   ${data.usage}
-  
-      
+        
   ## License
   
   ${licenseSection}
