@@ -1,7 +1,7 @@
 # Re-READMEagain [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
   ## Description
   
-  Program to help Developers wright README files
+  It is a progam used to help generate a README file
   
   
   ## Table of Contents 
@@ -15,11 +15,11 @@
   
   ## Installation
   
-  HTHSIK?
+  Run Through Command line
   
   ## Usage
   
-  To help save time writing READMEs
+  Used to save time
         
   ## License
   
@@ -35,7 +35,7 @@
   [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
   
   
-  ## Contribution
+  ## How to Contribute
   
   Don't mess it up
   
