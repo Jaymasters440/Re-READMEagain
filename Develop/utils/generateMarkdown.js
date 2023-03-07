@@ -98,9 +98,9 @@ function generateMarkdown(data) {
   ${licenseBadge}
   
   
-  ## How to Contribute
+  ## Contribute
   
-  ${data.contributions}
+  ${data.contribution}
   
   
   ## Questions
